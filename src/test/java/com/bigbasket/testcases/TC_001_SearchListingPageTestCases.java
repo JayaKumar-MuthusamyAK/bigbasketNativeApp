@@ -18,7 +18,6 @@ public class TC_001_SearchListingPageTestCases {
 			throw new SkipException("Test case runmode is no");
 		}
 		
-		
 		Keywords k = Keywords.getInstance();
 		k.executeKeywords("searchListingPageTestCases",null);
 	}

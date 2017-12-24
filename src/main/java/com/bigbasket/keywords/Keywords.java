@@ -63,7 +63,9 @@ public class Keywords extends TestBase{
 				case "type":
 					result = commonkeywords.type(objectkeys,datakeys);
 					break;
-					
+				case "addProduct":
+					result = commonkeywords.addProduct(objectkeys,datakeys);
+					break;
 				default:
 					logg("Method is not Matching");
 					break;

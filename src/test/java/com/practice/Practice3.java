@@ -30,7 +30,7 @@ public class Practice3 {
 		}
 		System.out.println();
 		
-		String test = "home_skip_link=id->com.bigbasket.mobileapp:id/btnSkip";
+		String test = "xpath->//android.widget.RelativeLayout/android.widget.TextView[@index='2']";
 		
 		String t = test.split("->")[0];
 		String s = test.split("->")[1];

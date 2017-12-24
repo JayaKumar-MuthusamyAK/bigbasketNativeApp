@@ -122,7 +122,7 @@ public class TestBase {
 	}
 	
 	public static List<WebElement> getLocators(String locator) throws Exception {
-        String[] split = locator.split("-");
+        String[] split = locator.split("->");
 		String locatorType = split[0];
 		String locatorValue = split[1];
 
