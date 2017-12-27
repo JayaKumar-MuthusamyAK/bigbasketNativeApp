@@ -31,75 +31,14 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">62.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">64.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.bigbasket.testcases.TC_001_SearchListingPageTestCases</td><td><a href="#m1"><b>searchListingPageTestCases</b>  </a></td><td class="numi">1</td><td>1514111013462</td><td class="numi">62356</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.bigbasket.testcases.TC_001_SearchListingPageTestCases</td><td><a href="#m1"><b>searchListingPageTestCases</b>  </a></td><td class="numi">1</td><td>1514394590563</td><td class="numi">64475</td></tr>
 </table>
 <h1>Default test</h1>
 <h2 id="m1">com.bigbasket.testcases.TC_001_SearchListingPageTestCases:searchListingPageTestCases</h2>
-<div style="padding-left:3em">
-<p>io.appium.uiautomator2.common.exceptions.NoAttributeFoundException: This element does not have the &apos;TextView&apos; attribute
-	at io.appium.uiautomator2.model.UiObject2Element.getBoolAttribute(UiObject2Element.java:116)
-	at io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:40)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:56)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:202)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:193)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:761)
- (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 27 milliseconds
-Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
-System info: host: &apos;admin-PC&apos;, ip: &apos;169.254.178.79&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_71&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{app=C:\Users\admin\housingman\workspace\bigbasketNativeapp\Drivers\bigbasket online grocery_v4.1.1_apkpure.com.apk, platformVersion=7.0, automationName=UiAutomator2, browserName=Android, platformName=Android, deviceName=ZY223L6BND, platform=ANY}]
-Session ID: 601e9820-1812-4ba7-a4d6-3113acdd28a4</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-<br/>at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
-<br/>at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-<br/>at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:150)
-<br/>at com.bigbasket.keywords.CommonAppKeywords.addProduct(CommonAppKeywords.java:88)
-<br/>at com.bigbasket.keywords.Keywords.executeKeywords(Keywords.java:67)
-<br/>at com.bigbasket.testcases.TC_001_SearchListingPageTestCases.searchListingPageTestCases(TC_001_SearchListingPageTestCases.java:22)
-<br/>25 lines not shown
-</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -83,7 +83,10 @@ public class TestBase {
 			fileinputstream = new FileInputStream(System.getProperty("user.dir")
 					+ "\\src\\main\\java\\com\\bigbasket\\locators\\searchlistingpage.properties");
 			prop.load(fileinputstream);
-			
+	
+			fileinputstream = new FileInputStream(System.getProperty("user.dir")
+					+ "\\src\\main\\java\\com\\bigbasket\\locators\\product.properties");
+			prop.load(fileinputstream);
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

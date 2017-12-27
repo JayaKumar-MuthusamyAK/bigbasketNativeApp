@@ -66,6 +66,12 @@ public class Keywords extends TestBase{
 				case "addProduct":
 					result = commonkeywords.addProduct(objectkeys,datakeys);
 					break;
+				case "verifyText":
+					result =  commonkeywords.verifyText(objectkeys,datakeys);
+					break;
+				case "goBack":
+					result = commonkeywords.goBack();
+					break;
 				default:
 					logg("Method is not Matching");
 					break;

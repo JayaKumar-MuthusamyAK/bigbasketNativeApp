@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.bigbasket.helpers.ScrollFuctionHelper;
 import com.bigbasket.helpers.WaitHelpers;
@@ -86,7 +87,9 @@ public class CommonAppKeywords extends TestBase{
 			for(int i=0; i<projectName_list.size();i++){
 				/*System.out.println(projectName_list.get(i).getText()+"--"+datakeys);*/
 				if(projectName_list.get(i).getText().equals(datakeys)){
-					getWebElement(locator2).click();
+					projectName_list.get(i).click();
+					/*getWebElement(locator2).click();*/
+				
 					foundProject =true;
 					break;
 				}
@@ -100,6 +103,27 @@ public class CommonAppKeywords extends TestBase{
 	
 		}
 		
+		return "Pass";
+	}
+
+	public String verifyText(String objectkeys, String datakeys) {
+		
+		try {
+			Assert.assertEquals(getWebElement(objectkeys).getText().toLowerCase(), datakeys.toLowerCase());
+		} catch (Exception e) {
+			return e.getMessage();
+		}
+		return "Pass";
+	}
+
+	public String goBack() {
+		
+		try {
+			driver.navigate().back();
+		} catch (Exception e) {
+			
+			return e.getMessage();
+		}
 		return "Pass";
 	}
 	
